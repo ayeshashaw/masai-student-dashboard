@@ -16,8 +16,7 @@ This is a basic React project that has been created using Vite. It includes comp
 
 1. **Clone the repository (if applicable):**
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/ayeshashaw/masai-student-dashboard.git
    ```
 
 2. **Install dependencies:**
