@@ -1,0 +1,121 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--background-color);
+}
+
+.login-card {
+  background: var(--surface-color);
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-large);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h1 {
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.login-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--surface-elevated);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-color-alpha);
+}
+
+.error-message {
+  background: var(--error-background);
+  color: var(--error-color);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-button {
+  padding: 14px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.demo-credentials {
+  margin-top: 32px;
+  padding: 16px;
+  background: var(--surface-elevated);
+  border-radius: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.demo-credentials p {
+  margin: 4px 0;
+  color: var(--text-secondary);
+}
+
+.demo-credentials p:first-child {
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 32px 24px;
+  }
+  
+  .login-card h1 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,120 @@
+.header {
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 24px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+  background: var(--hover-color);
+  color: var(--text-primary);
+}
+
+.nav-button.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: var(--surface-elevated);
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.theme-toggle:hover {
+  background: var(--hover-color);
+  transform: scale(1.05);
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: 1px solid var(--error-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--error-color);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background: var(--error-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 16px;
+    height: 56px;
+  }
+  
+  .logo {
+    font-size: 18px;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .header-actions {
+    gap: 8px;
+  }
+  
+  .logout-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
