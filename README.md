@@ -1,4 +1,4 @@
-# Project Title
+# masai-student-dashboard
 
 This is a basic React project that has been created using Vite. It includes components for user authentication and student management.
 
